@@ -34,8 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         else{
             for (let message of messages) {
-                feedbackDiv.innerHTML += message + "<br>";  
-                console.log(feedbackDiv.innerHTML);
+                feedbackDiv.innerHTML = messages.join("<br>");
                 feedbackDiv.style.color = "#dc3545";   
             }
         }
